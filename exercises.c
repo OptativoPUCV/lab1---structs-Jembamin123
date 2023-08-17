@@ -115,13 +115,17 @@ int checkSorted(int arr[], int size){
     }
   }
 
-  if (mame){
+  if (mame==1){
     return 1;   
-  } 
-  if (mema){
-    return -1;
   }
-  return 0;    
+  else{
+    if (mema==1){
+      return -1;
+    }
+    else{
+      return 0;
+    }
+  }   
 }
 
 /*
