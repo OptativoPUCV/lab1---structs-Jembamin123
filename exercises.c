@@ -108,10 +108,10 @@ int checkSorted(int arr[], int size){
     }
   }
   if(mame>=1){
-    return 1;
+    return -1;
   }
   if(mema>=1){
-    return -1;
+    return 1;
   }
   return 0;
 }
