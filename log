@@ -19,3 +19,17 @@ exercises.c:35:8: error: ‘largo’ undeclared (first use in this function)
       |        ^~~~~
 Compilation failed
 f3e6839
+Thu 17 Aug 2023 08:01:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:3: error: ‘aux’ undeclared (first use in this function)
+   34 |   aux=arr;
+      |   ^~~
+exercises.c:34:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:35:3: error: ‘largo’ undeclared (first use in this function)
+   35 |   largo=size;
+      |   ^~~~~
+Compilation failed
+d3fae9f
