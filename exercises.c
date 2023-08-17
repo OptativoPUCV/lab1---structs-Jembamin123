@@ -53,7 +53,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   }
 
-  int *newSize=(int*)malloc(contador*sizeof(int));
+  *newSize=(int*)malloc(contador*sizeof(int));
   
   if(arr==NULL){
     *newSize=0;
