@@ -30,7 +30,7 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {
+void reverseArray(int arr[], int size){
   for(int i = 0; i < size/2; i++){
     int temp;
     temp=arr[i];
@@ -45,7 +45,7 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+int *filterEvenNumbers(int arr[], int size, int *newSize){ 
   int contador=0;
   for (int i = 0; i < size; i++){
     if(arr[i]%2==0){
@@ -102,12 +102,12 @@ int checkSorted(int arr[], int size){
   int mema=1;
 
   for (int i=0; i<size-1; i++){
-    if (arr[i] < arr[i+1]){
-      mema=0;
+    if (arr[i]>arr[i+1]){
+      mame=0;
       } 
     else{
-      if (arr[i]>arr[i+1]){
-        mame=0;
+      if (arr[i]<arr[i+1]){
+        mema=0;
       } 
       else{
         if(arr[i]!=arr[i+1]){
@@ -186,7 +186,7 @@ Nodo *crearListaEnlazada(int arr[], int size){
   
   Nodo *act=primero;
 
-  for (int i=1;i<size;i++) {
+  for(int i=1;i<size;i++){
     Nodo *nuevo=(Nodo*)malloc(sizeof(Nodo)); 
     nuevo->numero=arr[i];
     nuevo->siguiente=NULL;
