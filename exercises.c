@@ -101,6 +101,9 @@ int checkSorted(int arr[], int size){
   int mame=0,mema=0;
   for(int i=0;i<size;i++){
     if(arr[i]<arr[i+1]){
+      return 0;      
+    }
+    if(arr[i]<arr[i+1]){
       mema++;
     }
     if(arr[i]>arr[i+1]){
