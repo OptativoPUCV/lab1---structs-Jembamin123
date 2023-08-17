@@ -58,3 +58,20 @@ exercises.c:34:3: error: ‘aux’ undeclared (first use in this function)
 exercises.c:34:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c72c2ef
+Thu 17 Aug 2023 08:02:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:11: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   34 |   int aux=arr;
+      |           ^~~
+exercises.c:38:8: error: subscripted value is neither array nor pointer nor vector
+   38 |     aux[i]=arr[largo];
+      |        ^
+exercises.c:34:7: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   34 |   int aux=arr;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+b72682e
