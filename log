@@ -314,3 +314,17 @@ exercises.c:84:50: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 dfceca1
+Thu 17 Aug 2023 08:51:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:83:34: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   83 |   for(uno=0,dos=0,tre=0;uno<size1,dos<size2;tre++){
+      |                                  ^
+exercises.c:84:20: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+   84 |     if((uno<size1) && (dos>=size2) || (arr1[uno]<arr2[dos])){
+      |        ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+81a1d11
