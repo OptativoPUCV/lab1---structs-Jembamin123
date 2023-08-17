@@ -437,3 +437,17 @@ Thu 17 Aug 2023 10:04:09 PM UTC:
  tests:  0|3
 total_score: 40/70
 ab81a07
+Thu 17 Aug 2023 10:30:06 PM UTC: 
+ exercises.c | 42 +++++++++++++++++++++++++++++-------------
+ 1 file changed, 29 insertions(+), 13 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:125:5: error: ‘else’ without a previous ‘if’
+  125 |     else{
+      |     ^~~~
+exercises.c:129:1: error: control reaches end of non-void function [-Werror=return-type]
+  129 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4975ce9
