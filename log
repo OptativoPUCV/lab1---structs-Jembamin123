@@ -121,3 +121,15 @@ exercises.c:34:7: error: variable ‘aux’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 2e3880e
+Thu 17 Aug 2023 08:10:56 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:7: error: array size missing in ‘auxArr’
+   34 |   int auxArr[];
+      |       ^~~~~~
+exercises.c:34:7: error: variable ‘auxArr’ set but not used [-Werror=unused-but-set-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+fdecbcf
