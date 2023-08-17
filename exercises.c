@@ -110,7 +110,9 @@ int checkSorted(int arr[], int size){
         mame=0;
       } 
       else{
-        return 0;  
+        if(arr[i]!=arr[i+1]){
+          return 0;
+        }   
       }
     }
   }
