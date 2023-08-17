@@ -107,7 +107,7 @@ int checkSorted(int arr[], int size){
       mame++;
     }
   }
-  if(mame>=1 || mema>=1){
+  if(mame>=1 && mema>=1){
     return 0;
   }
   if(mame>=1){
