@@ -98,29 +98,20 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size){
-  if(size<=1){
+  int mame=0,mema=0;
+  for(int i=0;i<size;i++){
+    if(arr[i]<arr[i+1]){
+      mema++;
+    }
+    if(arr[i]>arr[i+1]){
+      mame++;
+    }
+  }
+  if(mame>=1){
     return 1;
   }
-  
-  if(arr[0]>arr[1]){
-    if (size==2){
-      return -1;
-    }
-    else{
-      if(arr[1]>arr[2]){
-        return -1;
-      }
-    }
-  }
-  if(arr[0]<arr[1]){
-    if (size==2){
-      return 1;
-    }
-    else{
-      if(arr[1]<arr[2]){
-        return 1;
-      }
-    }
+  if(mema>=1){
+    return -1;
   }
   return 0;
 }
