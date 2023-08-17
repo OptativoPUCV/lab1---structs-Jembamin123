@@ -107,13 +107,13 @@ int checkSorted(int arr[], int size){
       mame++;
     }
   }
+  if(mame>=1 || mema>=1){
+    return 0;
+  }
   if(mame>=1){
     return -1;
   }
-  if(mema>=1){
-    return 1;
-  }
-  return 0;
+  return 1;
 }
 
 /*
