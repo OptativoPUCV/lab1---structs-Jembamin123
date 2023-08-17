@@ -45,7 +45,31 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+  int contador=0;
+  for (int i = 1; i < size; i++){
+    if(arr[i]%2==0){
+      contador++;
+    }
+  }
+
+  int *arrPares=(int*)malloc(contador*sizeof(int));
+  
+  if(arr==NULL){
+    *newSize=0;
+    return NULL
+  }
+
+  int largoPares=0;
+  for (int j = 1; j < size; j++){
+    if(arr[j]%2==0){
+      arrPares[largoPares]=arr[j];
+      largo++;
+    }
+  }
+  
+  return arrPares; 
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
