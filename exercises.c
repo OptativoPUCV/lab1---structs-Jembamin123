@@ -53,7 +53,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   }
 
-  *newSize=(int*)malloc(contador*sizeof(int));
+  int *arrPares=(int*)malloc(contador*sizeof(int));
   
   if(arr==NULL){
     *newSize=0;
@@ -63,10 +63,13 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int largoPares=0;
   for (int j = 0; j < size; j++){
     if(arr[j]%2==0){
-      newSize[largoPares]=arr[j];
+      arrPares[largoPares]=arr[j];
       largoPares++;
     }
   }
+
+  *newSize=arrPares;
+  return arrPares;
 }
 
 /*
