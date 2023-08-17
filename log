@@ -5,3 +5,17 @@ Thu 17 Aug 2023 07:57:46 PM UTC:
  tests:  0|6
 total_score: 10/70
 6281999
+Thu 17 Aug 2023 08:01:10 PM UTC: 
+ exercises.c | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:3: error: ‘aux’ undeclared (first use in this function)
+   34 |   aux=arr;
+      |   ^~~
+exercises.c:34:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:35:8: error: ‘largo’ undeclared (first use in this function)
+   35 |   size=largo;
+      |        ^~~~~
+Compilation failed
+f3e6839
