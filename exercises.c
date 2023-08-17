@@ -38,6 +38,7 @@ void reverseArray(int arr[], int size) {
     auxArr[i]=arr[largo];
     largo--;
   }
+   arr=auxArr;
 }
 
 /*
