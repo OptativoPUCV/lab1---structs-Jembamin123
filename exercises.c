@@ -64,7 +64,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   for (int j = 1; j < size; j++){
     if(arr[j]%2==0){
       arrPares[largoPares]=arr[j];
-      largo++;
+      largoPares++;
     }
   }
   
