@@ -112,8 +112,20 @@ int checkSorted(int arr[], int size){
       }
     }
   }
-  
-  return 1;
+  if(arr[0]<arr[1]){
+    if (size==2){
+      return 1;
+    }
+    else{
+      if(arr[1]<arr[2]){
+        return 1;
+      }
+    }
+  }
+  else{
+    return 0;
+  }
+
   
 }
 
