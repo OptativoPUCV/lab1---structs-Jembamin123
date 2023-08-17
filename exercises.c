@@ -120,8 +120,7 @@ int checkSorted(int arr[], int size){
   } 
   if (mema){
     return -1;
-    }
-  } 
+  }
   return 0;    
 }
 
