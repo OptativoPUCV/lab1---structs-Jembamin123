@@ -451,3 +451,13 @@ exercises.c:129:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 4975ce9
+Thu 17 Aug 2023 10:32:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:126:3: error: ‘else’ without a previous ‘if’
+  126 |   else{
+      |   ^~~~
+Compilation failed
+1e2fa2c
